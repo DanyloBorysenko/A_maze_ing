@@ -1,6 +1,10 @@
 *This project has been created as part of the 42 curriculum by \<danborys\>, \<sudas\>*
 
 # A-Maze-Ing
+<p align="center">
+  <img src="input.gif" alt="System Demo" width="300">
+</p>
+
 ## Description
 This project focuses on the algorithmic generation and resolution of mazes. To provide a complete user experience, it features:
 
@@ -84,20 +88,6 @@ the maze grid and the solution path to render the result.
 This separation worked well in practice and made it straightforward to package the
 backend independently as the `mazegen` module.
 
-### What went well:
-- The maze generator and solver work correctly and reliably.
-- The loose coupling between backend and visualizer made development and packaging clean.
-- The two parts were developed in parallel without significant conflicts.
-
-### What could be improved
-- DFS generates very long solution paths in perfect mazes. Prim's algorithm would
-  produce shorter, more varied paths.
-- The non-perfect maze generation (opening walls randomly after DFS) could be improved
-  with a more principled approach.
-- The visualizer implements the bare minimum. Potential improvements include a
-  generation animation, auto-scaling cell sizes based on maze dimensions, and
-  interactive colour pickers.
-
 ### How to use re-usable module:
 1. `mazegen`
 
@@ -168,5 +158,3 @@ The maze is generated automatically during initialization.
 - Documentation: Docstrings were initially drafted by Gemini and manually refined for technical accuracy.
 
 - Packaging: We utilized AI to streamline the transition to the uv build system.
-
-- Code: All core logic and architectural implementations were authored solely by the project team.
